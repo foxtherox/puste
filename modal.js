@@ -37,6 +37,10 @@ function show(id) {
     panels.forEach(p => p.classList.add("hidden"));
     galleries.forEach(g => g.classList.add("hidden"));
 
+    document.querySelectorAll("video").forEach(video => {
+        video.pause();
+    });
+
     if (target) target.classList.remove("hidden");
 
     if (isGallery) {
@@ -44,4 +48,33 @@ function show(id) {
     } else {
         logo.classList.remove("hidden-logo");
     }
+
+        if (target) {
+        target.classList.remove("hidden");
+
+        const targetVideo = target.querySelector("video");
+
+        if (targetVideo) {
+            targetVideo.play().catch(() => {});
+        }
+    }
 }
+
+const contactModal = document.getElementById("contactModal");
+const openContact = document.getElementById("openContact");
+const contactWindow = document.querySelector(".contact-window");
+
+openContact.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    contactModal.classList.remove("hidden");
+});
+
+contactModal.addEventListener("click", () => {
+    contactModal.classList.add("hidden");
+});
+
+contactWindow.addEventListener("click", (e) => {
+    e.stopPropagation();
+});
+

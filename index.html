@@ -1,35 +1,74 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paweł Domański</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 
+
 <body>
 
-    <section id="home" class="layout">
-    <h1 class="logo ui-layer">Paweł Domański</h1>
 
-    <div class="container">
-    <header class="header">
-            <div class="header__container">
-                <nav class="header__nav">
-                    <ul class="header__menu">
-                        <li><a class="link" href="#" data-open="painting">painting</a></li>
-                        <li><a class="link" href="#" data-open="exhibitions">exhibitions</a></li>
-                        <li><a class="link" href="#" data-open="about">about</a></li>
-                    </ul>
-                </nav>
-            </div>
-    </header>
-    <a class="contact link" href="#contact">contact</a>
-    </div>
+
+    <section id="home" class="layout">
+            <section class="hero-section logo">
+                <img class="hero-image"
+                    src="/images/ptak.JPG" 
+                    alt="ptak">
+                <h1 class="hero-title">Paweł Domański</h1>
+            </section>
+        <div class="container">
+            <header class="header">
+                    <div class="header__container">
+                        <nav class="header__nav">
+                            <ul class="header__menu">
+                                <li><a class="link" href="#" data-open="painting">painting</a></li>
+                                <li><a class="link" href="#" data-open="exhibitions">exhibitions</a></li>
+                                <li><a class="link" href="#" data-open="about">about</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+            </header>
+        </div>
     </section>
+    
+<a class="contact link" href="#" id="openContact">contact</a>
+
+<div id="contactModal" class="contact-modal hidden">
+    <div class="contact-window">
+        <div class="contact-visual">
+        <img
+            class="contact-image"
+            src="./images/angelyky.jpg"
+            alt="Contact"
+        >
+        <div class="contact-content">
+            <a
+                href="mailto:your@email.com"
+                class="contact-link"
+            >
+                pawelpuste@gmail.com
+            </a>
+
+            <a
+                href="https://instagram.com/pustedziary"
+                target="_blank"
+                class="contact-link"
+            >
+                IG: @pustedizary
+            </a>
+            </div>
+        </div>
+    </div>
+</div>
 
     <section id="about" class="panel panel--text hidden">
-        <div class="about-content">
+        <div class="about-content scroll">
             <p>
                 Paweł Domański (ur. 1994) — malarz, rysownik i tatuażysta. Absolwent ASP we Wrocławiu, gdzie w 2024 roku obronił dyplom z malarstwa na kierunku Grafika. W swojej praktyce bada relacje pomiędzy obrazem, percepcją, snem oraz procesem twórczym traktowanym jako narzędzie obserwacji rzeczywistości wewnętrznej. Rozwija autorskie pojęcia „gestu równoległego” i „obserwacji warstwowej”, koncentrując się na procesie transformacji zachodzącym podczas aktu twórczego. 
             </p>
@@ -67,8 +106,9 @@ Discorso Nascosto, Rzym, 2023<br>
 
     <section id="exhibitions" class="panel hidden">
         <ul class="exhibitions-list">
+            <li><a href="#" class="link" data-open-sub="abovo">AB OVO</a></li>
             <li><a href="#" class="link" data-open-sub="stranger">Inaczej niż w raju</a></li>
-            <li><a href="#" class="link" data-open-sub="alldogs">Wszystkie psy idą do nieba</a></li>
+            <li><a href="#" class="link" data-open-sub="psy">Wszystkie psy idą do nieba</a></li>
             <li><a href="#" class="link" data-open-sub="panhilary">Pan hilary zgubił okulary</a></li>
         </ul>
     </section>
@@ -305,7 +345,7 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
     </figure>
 
     <figure class="small-vertical">
-        <img src="./images/prolog/zadomem.png" alt="Za domem">
+        <img src="./images/prolog/zadomem.jpg" alt="Za domem">
         <figcaption>
             <p class="painting-title">Za domem</p>
             <p class="painting-medium">acrylic on canvas, 50x50</p>
@@ -314,7 +354,7 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
     </figure>
 
     <figure class="small-vertical">
-        <img src="./images/prolog/zagajnik.png" alt="Zagajnik">
+        <img src="./images/prolog/zagajnik.jpg" alt="Zagajnik">
         <figcaption>
             <p class="painting-title">Zagajnik</p>
             <p class="painting-medium">acrylic on canvas, 30x40</p>
@@ -332,7 +372,7 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
     </figure>
 
     <figure class="small-vertical">
-        <img src="./images/prolog/bath.png" alt="Kąpiel">
+        <img src="./images/prolog/bath.jpg" alt="Kąpiel">
         <figcaption>
             <p class="painting-title">Kąpiel</p>
             <p class="painting-medium">oil on canvas, 30x40</p>
@@ -342,7 +382,7 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
 
 <figure class="small-vertical">
     <div class="triple">
-        <img src="./images/prolog/stan1.png" alt="trzy stany">
+        <img src="./images/prolog/stan1.jpg" alt="trzy stany">
         <img src="./images/prolog/stan2.jpg" alt="trzy stany">
         <img src="./images/prolog/stan3.jpg" alt="trzy stany">
     </div>
@@ -434,6 +474,282 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
         <p class="painting-year">2024</p>
     </figcaption>
 </figure>
+</section>
+
+<section id="paradise" class="painting-gallery hidden">
+
+    <!-- <figure class="total">
+        <img src="./images/paradise/pasek.jpg" alt="Inaczej niż w raju 9">
+    </figure>
+
+    <figure class="total">
+        <img src="./images/paradise/to.jpg" alt="To się dzieje równolegle">
+    </figure> -->
+
+    <div class="paradise-stack">
+        <div class="paradise-layout">
+            <figure class="paradise-left">
+                <img src="./images/paradise/historia.jpg" alt="Historia">
+            </figure>
+            <figure class="paradise-right">
+                <img src="./images/paradise/inaczej.jpg" alt="Inaczej niż w raju">
+            </figure>
+        </div>
+
+        <div class="paradise-layout">
+            <figure class="paradise-left">
+                <img src="./images/paradise/1.png" alt="Opis">
+                <figcaption>
+                    <p>przypomina ci o tym skąd idziesz<br>
+                    i dokąd</p>
+                </figcaption>
+            </figure>
+            <figure class="paradise-right">
+                <img src="./images/paradise/dom.JPG" alt="Dom">
+            </figure>
+        </div>
+
+        <div class="paradise-layout">
+            <figure class="paradise-left">
+                <img src="./images/paradise/2.png" alt="Opis">
+                    <figcaption>
+                        <p>zaczynam widzieć<br>
+                        że wszystko<br>
+                        na co patrzyłeś<br>
+                        zostanie przemienione<br>
+                        za sprawą<br>
+                        co najmniej przypadku</p>
+                    </figcaption>
+            </figure>
+            <figure class="paradise-right">
+                <img src="./images/paradise/symulacja.JPG" alt="Symulacja">
+            </figure>
+        </div>
+
+        <div class="paradise-layout">
+            <figure class="paradise-left">
+                <img src="./images/paradise/3.png" alt="Opis">
+                    <figcaption>
+                        <p>musisz przejść<br>
+                        szukałeś drzwi tak długo<br>
+                        ten etap już za tobą<br>
+                        musisz przejść</p>
+                    </figcaption>
+            </figure>
+            <figure class="paradise-right">
+                <img src="./images/paradise/passage.JPG" alt="Przejście">
+            </figure>
+        </div>
+
+        <div class="paradise-layout">
+            <figure class="paradise-left">
+                <img src="./images/paradise/4.png" alt="Opis">
+                    <figcaption>
+                        <p>mówi do ciebie nowa tajemnica<br>
+                        poprzednie życie jest czyimś innym<br>
+                        nie jesteś nim<br>
+                        musisz przejść przez wszystkie bramy które napotkasz<br>
+                        czasem wpadniesz w ślepy zaułek<br>
+                        nie zniechęcaj się<br>
+                        patrz na niego<br>
+                        cierpliwie<br>
+                        a otworzy się przejście<br>
+                        i nie będziesz wiedział gdzie idziesz<br>
+                        a droga będzie znajoma</p>
+                    </figcaption>
+            </figure>
+            <figure class="paradise-right">
+                <img src="./images/paradise/nowy.JPG" alt="Nowy Świat">
+            </figure>
+        </div>
+
+        <div class="paradise-layout">
+            <figure class="paradise-left">
+                <img src="./images/paradise/5.png" alt="Opis">
+                    <figcaption>
+                        <p>Rzym to mieszanka cudzych wspomnień i mnie<br>
+                        Rzym uczy mnie płynąć<br>
+                        Rzym przeze mnie płynie<br>
+                        nauczył mnie<br>
+                        jak mu pozwalać<br>
+                        wtedy Rzym jest wszędzie<br>
+                        i ja<br>
+                        jestem nim<br>
+                        gdy jestem w Rzymie<br>
+                        to maluję jak Rzym</p>
+                    </figcaption>
+            </figure>
+            <figure class="paradise-right">
+                <img src="./images/paradise/roma.JPG" alt="Rzym">
+            </figure>
+        </div>
+
+        <div class="paradise-layout">
+            <figure class="paradise-left">
+                <img src="./images/paradise/6.png" alt="Opis">
+                    <figcaption>
+                        <p>spowija mi oczy mgła<br>
+                        mgła zasłania szum</p>
+                    </figcaption>
+            </figure>
+            <figure class="paradise-right">
+                <img src="./images/paradise/mgla.JPG" alt="Mgła">
+            </figure>
+        </div>
+
+        <div class="paradise-layout">
+            <figure class="paradise-left">
+                <img src="./images/paradise/7.png" alt="Opis">
+                    <figcaption>
+                        <p>od lat powtarza się ten sen<br>
+                        w którym istnieje dodatkowy pokój<br>
+                        który przecież zawsze tam był<br>
+                        a jednak na co dzień go nie ma<br>
+                        to zawsze jest pokój<br>
+                        który przypomina ci dom<br>
+                        znasz go<br>
+                        i nie znasz</p>
+                    </figcaption>
+            </figure>
+            <figure class="paradise-right">
+                <img src="./images/paradise/sen.JPG" alt="Sen">
+            </figure>
+        </div>
+
+        <div class="paradise-layout">
+            <figure class="paradise-left">
+                <img src="./images/paradise/8.png" alt="Opis">
+                    <figcaption>
+                        <p>musisz czekać<br>
+                            wiedzieć że<br>
+                            i<br>
+                            na co<br>
+                            czekasz<br>
+                            gdy przyjdzie<br>
+                            cokolwiek by to nie było<br>
+                            będziesz wiedział że przyszło<br>
+                            to<br>
+                            na co wiesz<br>
+                            ze czekałeś</p>
+                    </figcaption>
+            </figure>
+            <figure class="paradise-right">
+                <img src="./images/paradise/patience.JPG" alt="Cierpliwość">
+            </figure>
+        </div>
+
+        <div class="paradise-layout">
+            <figure class="paradise-left">
+                <img src="./images/paradise/10.png" alt="Opis">
+                    <figcaption>
+                        <p>otworzyło się<br>
+                        na chwilę<br>
+                        długą jak wieczność<br>
+                        przejście<br>
+                        tunel przejść<br>
+                        przejścia w przejścia<br>
+                        od tamtej pory wszystko jest inne</p>
+                    </figcaption>
+            </figure>
+            <figure class="paradise-right">
+                <img src="./images/paradise/incydent.JPG" alt="Incydent">
+            </figure>
+        </div>
+    </div>
+
+</section>
+
+<section id="plenery" class="painting-gallery hidden">
+    <figure class="small">
+        <div class="double">
+            <img src="./images/plener/stopka.JPG" alt="plener">
+            <img src="./images/plener/head.JPG" alt="plener">
+        </div>
+    </figure>
+
+    <figure class="small">
+            <img src="./images/plener/meeting.JPG" alt="plener">
+    </figure>
+
+    <figure class="total">
+        <img src="./images/plener/smok.JPG" alt="Smok">
+        <!-- <figcaption>
+            <p class="painting-title">Granica</p>
+            <p class="painting-medium">acrylic on canvas, 170x270</p>
+            <p class="painting-year">2024</p>
+        </figcaption> -->
+    </figure>
+
+    <figure class="total">
+        <div class="double">
+            <img src="/images/plener/tree.JPG" alt="">
+            <img src="/images/plener/pien.JPG" alt="">
+        </div>
+    </figure>
+
+
+</section>
+
+<section id="abovo" class="painting-gallery hidden">
+        <video autoplay loop playsinline preload="metadata" class="art-video" controls preload="metadata">
+            <source src="./videos/abovo.mp4" type="video/mp4">
+        </video>
+</section>
+
+<section id="panhilary" class="painting-gallery hidden">
+    <figure class="total">
+        <img src="/images/panhilary/p1.jpg" alt="">
+    </figure>
+
+    <figure class="vertical">
+        <img src="/images/panhilary/p3.jfif" alt="">
+    </figure>
+
+    <figure class="vertical">
+        <img src="/images/panhilary/p2.jfif" alt="">
+    </figure>
+
+    <figure class="total">
+        <img src="/images/panhilary/p4.JPG" alt="">
+    </figure>
+
+    <figure class="horizontal">
+        <img src="/images/panhilary/p5.JPG" alt="">
+    </figure>
+
+</section>
+
+<section id="stranger" class="painting-gallery hidden">
+    <video autoplay loop playsinline preload="metadata" class="art-video" controls preload="metadata">
+        <source src="/videos/snake.MP4">
+    </video>
+    
+</section>
+
+<section id="psy" class="painting-gallery hidden">
+    <figure class="total">
+            <img src="/images/psy/2.JPG" alt="zdjęcie z wystawy">
+    </figure>
+
+    <figure class="horizontal">
+            <img src="/images/psy/1.JPG" alt="zdjęcie z wystawy">
+    </figure>
+
+    <figure class="horizontal">
+            <img src="/images/psy/3.JPG" alt="zdjęcie z wystawy">
+    </figure>
+
+    <figure class="horizontal">
+            <img src="/images/psy/4.JPG" alt="zdjęcie z wystawy">
+    </figure>
+
+    <figure class="horizontal">
+            <img src="/images/psy/5.JPG" alt="zdjęcie z wystawy">
+    </figure>
+
+    <figure class="total">
+            <img src="/images/psy/6.JPG" alt="zdjęcie z wystawy">
+    </figure>
 </section>
 
 </body>
