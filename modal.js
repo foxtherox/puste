@@ -23,11 +23,10 @@ document.querySelectorAll("[data-open-sub]").forEach(link => {
     });
 });
 
-
-
 const panels = document.querySelectorAll(".panel");
 const galleries = document.querySelectorAll(".painting-gallery");
 const logo = document.querySelector(".logo");
+const contact = document.querySelector(".contact");
 
 function show(id) {
     const target = document.getElementById(id);
@@ -44,12 +43,14 @@ function show(id) {
     if (target) target.classList.remove("hidden");
 
     if (isGallery) {
-        logo.classList.add("hidden-logo");
+        logo.classList.add("hidden-ui");
+        contact.classList.add("hidden-ui");
     } else {
-        logo.classList.remove("hidden-logo");
+        logo.classList.remove("hidden-ui");
+        contact.classList.remove("hidden-ui");
     }
 
-        if (target) {
+    if (target) {
         target.classList.remove("hidden");
 
         const targetVideo = target.querySelector("video");
