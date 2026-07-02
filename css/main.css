@@ -67,7 +67,7 @@ body {
 
     gap: 1rem;
 
-    z-index: 3;
+    z-index: 100;
 }
 
 .contact-link {
@@ -75,6 +75,8 @@ body {
     color: var(--color-accent);
     font-size: 1.5rem;
     text-align: center;
+    z-index: 100;
+    
 }
 
 
@@ -217,10 +219,20 @@ a {
 @media (max-width: 768px) {
 
     #about {
-        position: absolute;
-        top: calc(100vh - 120px);
+        position: fixed;
+        top: 80px;
         left: 0;
+        z-index: 10;
+
         width: 100vw;
+        height: calc(100vh - 80px);
+
+        padding: 2rem;
+        padding-right: 2 rem;
+
+        transform: none;
+
+        overflow-y: auto;
     }
 
     #exhibitions, #painting {
@@ -349,6 +361,7 @@ body::-webkit-scrollbar,
   position: fixed;
   right: 10px;
   bottom: 2rem;
+  z-index: 100;
 }
 
 

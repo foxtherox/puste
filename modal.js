@@ -28,10 +28,14 @@ const galleries = document.querySelectorAll(".painting-gallery");
 const logo = document.querySelector(".logo");
 const contact = document.querySelector(".contact");
 
+
 function show(id) {
     const target = document.getElementById(id);
 
     const isGallery = target?.classList.contains("painting-gallery");
+
+    const heroTitle = document.querySelector(".hero-title");
+    const heroImage = document.querySelector(".hero-image");
 
     panels.forEach(p => p.classList.add("hidden"));
     galleries.forEach(g => g.classList.add("hidden"));
@@ -48,6 +52,16 @@ function show(id) {
     } else {
         logo.classList.remove("hidden-ui");
         contact.classList.remove("hidden-ui");
+    }
+
+    if (window.innerWidth <= 768) {
+    if (id === "about") {
+        heroTitle.classList.add("hidden");
+        heroImage.classList.add("hidden");
+    } else {
+        heroTitle.classList.remove("hidden");
+        heroImage.classList.remove("hidden");
+    }
     }
 
     if (target) {
@@ -78,4 +92,12 @@ contactModal.addEventListener("click", () => {
 contactWindow.addEventListener("click", (e) => {
     e.stopPropagation();
 });
+
+const hero = document.querySelector(".hero-section");
+
+if (id === "about") {
+    hero.classList.add("hidden");
+} else {
+    hero.classList.remove("hidden");
+}
 
