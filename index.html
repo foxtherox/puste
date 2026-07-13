@@ -33,6 +33,12 @@
     </section>
     <a class="contact link" href="#" id="openContact">contact</a>
 
+    <div class="language-switch">
+        <button class="language-button" data-lang="pl">PL</button>
+        <span>/</span>
+        <button class="language-button" data-lang="en">EN</button>
+    </div>
+
     <div id="contactModal" class="contact-modal hidden">
     <div class="contact-window">
         <div class="contact-visual">
@@ -54,7 +60,7 @@
                 target="_blank"
                 class="contact-link"
             >
-                IG: @pustedizary
+                IG: @pustedziary
             </a>
             </div>
         </div>
@@ -101,19 +107,19 @@ Discorso Nascosto, Rzym, 2023<br>
     <section id="exhibitions" class="panel hidden">
         <ul class="exhibitions-list">
             <li><a href="#" class="link" data-open-sub="abovo">AB OVO</a></li>
-            <li><a href="#" class="link" data-open-sub="stranger">Inaczej niż w raju</a></li>
-            <li><a href="#" class="link" data-open-sub="psy">Wszystkie psy idą do nieba</a></li>
-            <li><a href="#" class="link" data-open-sub="panhilary">Pan hilary zgubił okulary</a></li>
+            <li><a href="#" class="link" data-open-sub="stranger" data-i18n="stranger"></a></li>
+            <li><a href="#" class="link" data-open-sub="psy" data-i18n="psy"></a></li>
+            <li><a href="#" class="link" data-open-sub="panhilary" data-i18n="panhilary"></a></li>
         </ul>
     </section>
 
     <section id="painting" class="panel hidden">
         <ul class="painting-list">
-            <li><a href="#" class="link" data-open-sub="song">Pieśn doświadczania śmierci</a></li>
-            <li><a href="#" class="link" data-open-sub="prolog">Prolog</a></li>
-            <li><a href="#" class="link" data-open-sub="paradise">Inaczej niż w raju</a></li>
-            <li><a href="#" class="link" data-open-sub="dogs">Wszystkie psy idą do nieba</a></li>
-            <li><a href="#" class="link" data-open-sub="plenery">Plenery</a></li>
+            <li><a href="#" class="link" data-open-sub="song" data-i18n="song"></a></li>
+            <li><a href="#" class="link" data-open-sub="prolog" data-i18n="prolog"></a></li>
+            <li><a href="#" class="link" data-open-sub="paradise" data-i18n="stranger"></a></li>
+            <li><a href="#" class="link" data-open-sub="dogs" data-i18n="psy"></a></li>
+            <li><a href="#" class="link" data-open-sub="plenery" data-i18n="plenery"></a></li>
         </ul>
     </section>
 
@@ -122,27 +128,27 @@ Discorso Nascosto, Rzym, 2023<br>
     <h2 class="title">Pieśń doświadczania śmierci</h2>
 
     <figure class="vertical">
-        <img src="./images/sun.jpg" alt="Kiedyś byłem dzieckiem">
+        <img src="./images/sun.jpg" alt="Once I Was a Child">
         <figcaption>
-            <p class="painting-title">Kiedyś byłem dzieckiem</p>
+            <p class="painting-title" data-i18n="child"></p>
             <p class="painting-medium">oil on canvas, 60x80</p>
             <p class="painting-year">2026</p>
         </figcaption>
     </figure>
 
     <figure class="horizontal">
-        <img src="./images/lie.jpg" alt="Zakłamanie">
+        <img src="./images/lie.jpg" alt="Lie">
         <figcaption>
-            <p class="painting-title">Zakłamanie</p>
+            <p class="painting-title" data-i18n="lie"></p>
             <p class="painting-medium">oil on canvas, 50x60</p>
             <p class="painting-year">2026</p>
         </figcaption>
     </figure>
 
     <figure class="horizontal">
-        <img src="./images/boy.jpg" alt="Chłopiec">
+        <img src="./images/boy.jpg" alt="Boy">
         <figcaption>
-            <p class="painting-title">Chłopiec</p>
+            <p class="painting-title" data-i18n="boy"></p>
             <p class="painting-medium">oil on canvas, 40x60</p>
             <p class="painting-year">2026</p>
         </figcaption>
@@ -151,7 +157,7 @@ Discorso Nascosto, Rzym, 2023<br>
     <figure class="horizontal">
         <img src="./images/grodzisko.jpg" alt="Grodzisko">
         <figcaption>
-            <p class="painting-title">Grodzisko</p>
+            <p class="painting-title" data-i18n="grodzisko"></p>
             <p class="painting-medium">oil on canvas, 40x60</p>
             <p class="painting-year">2026</p>
         </figcaption>
@@ -160,7 +166,7 @@ Discorso Nascosto, Rzym, 2023<br>
     <figure class="small">
         <img src="./images/kapliczka.jpg" alt="Kapliczka przy drzewie">
         <figcaption>
-            <p class="painting-title">Kapliczka przy drzewie</p>
+            <p class="painting-title" data-i18n="kapliczka"></p>
             <p class="painting-medium">oil on canvas, 50x60</p>
             <p class="painting-year">2026</p>
         </figcaption>
@@ -169,7 +175,7 @@ Discorso Nascosto, Rzym, 2023<br>
     <figure class="small">
         <img src="./images/nauka.jpg" alt="Nauka">
         <figcaption>
-            <p class="painting-title">Nauka</p>
+            <p class="painting-title" data-i18n="nauka"></p>
             <p class="painting-medium">oil on canvas, 30x40</p>
             <p class="painting-year">2026</p>
         </figcaption>
@@ -178,7 +184,7 @@ Discorso Nascosto, Rzym, 2023<br>
     <figure class="horizontal">
         <img src="./images/dysputa.jpg" alt="Dysputa przy przejściu">
         <figcaption>
-            <p class="painting-title">Dysputa przy przejściu</p>
+            <p class="painting-title" data-i18n="dysputa"></p>
             <p class="painting-medium">oil on canvas, 30x40</p>
             <p class="painting-year">2026</p>
         </figcaption>
@@ -187,7 +193,7 @@ Discorso Nascosto, Rzym, 2023<br>
     <figure class="horizontal">
         <img src="./images/droga.jpg" alt="Droga przez most">
         <figcaption>
-            <p class="painting-title">Droga przez most</p>
+            <p class="painting-title" data-i18n="droga"></p>
             <p class="painting-medium">oil on canvas, 50x60</p>
             <p class="painting-year">2026</p>
         </figcaption>
@@ -196,7 +202,7 @@ Discorso Nascosto, Rzym, 2023<br>
     <figure class="horizontal">
         <img src="./images/rozdroze.jpg" alt="Rozdroże">
         <figcaption>
-            <p class="painting-title">Rozdroże</p>
+            <p class="painting-title" data-i18n="crossroads"></p>
             <p class="painting-medium">oil on canvas, 50x60</p>
             <p class="painting-year">2026</p>
         </figcaption>
@@ -205,7 +211,7 @@ Discorso Nascosto, Rzym, 2023<br>
     <figure class="small">
         <img src="./images/puste.jpg" alt="Puste miejsce">
         <figcaption>
-            <p class="painting-title">Puste miejsce</p>
+            <p class="painting-title" data-i18n="puste"></p>
             <p class="painting-medium">oil on canvas, 30x40</p>
             <p class="painting-year">2026</p>
         </figcaption>
@@ -214,7 +220,7 @@ Discorso Nascosto, Rzym, 2023<br>
     <figure class="small">
         <img src="./images/tree.jpg" alt="Samotne drzewo">
         <figcaption>
-            <p class="painting-title">Samotne drzewo</p>
+            <p class="painting-title" data-i18n="tree"></p>
             <p class="painting-medium">oil on canvas, 30x30</p>
             <p class="painting-year">2026</p>
         </figcaption>
@@ -223,7 +229,7 @@ Discorso Nascosto, Rzym, 2023<br>
     <figure class="small vertical">
         <img src="./images/spark.jpg" alt="Błysk w oku">
         <figcaption>
-            <p class="painting-title">Błysk w oku</p>
+            <p class="painting-title" data-i18n="spark"></p>
             <p class="painting-medium">oil on canvas, 30x24</p>
             <p class="painting-year">2026</p>
         </figcaption>
@@ -232,7 +238,7 @@ Discorso Nascosto, Rzym, 2023<br>
     <figure class="small">
         <img src="./images/rana.jpg" alt="Rana z przeszłości">
         <figcaption>
-            <p class="painting-title">Rana z przeszłości</p>
+            <p class="painting-title" data-i18n="rana"></p>
             <p class="painting-medium">oil on canvas, 30x30</p>
             <p class="painting-year">2026</p>
         </figcaption>
@@ -241,7 +247,7 @@ Discorso Nascosto, Rzym, 2023<br>
     <figure class="small">
         <img src="./images/propozycja.jpg" alt="Propozycja">
         <figcaption>
-            <p class="painting-title">Propozycja</p>
+            <p class="painting-title" data-i18n="propozycja"></p>
             <p class="painting-medium">oil on canvas, 24x30</p>
             <p class="painting-year">2026</p>
         </figcaption>
@@ -250,7 +256,7 @@ Discorso Nascosto, Rzym, 2023<br>
     <figure class="horizontal">
         <img src="./images/shadow.jpg" alt="Cień w miasteczku">
         <figcaption>
-            <p class="painting-title">Cień w miasteczku</p>
+            <p class="painting-title" data-i18n="shadow"></p>
             <p class="painting-medium">oil on canvas, 30x40</p>
             <p class="painting-year">2026</p>
         </figcaption>
@@ -259,7 +265,7 @@ Discorso Nascosto, Rzym, 2023<br>
     <figure class="horizontal">
         <img src="./images/gora.jpg" alt="Święta góra">
         <figcaption>
-            <p class="painting-title">Święta góra</p>
+            <p class="painting-title" data-i18n="gora"></p>
             <p class="painting-medium">oil on canvas, 24x30</p>
             <p class="painting-year">2026</p>
         </figcaption>
@@ -268,7 +274,7 @@ Discorso Nascosto, Rzym, 2023<br>
     <figure class="small">
         <img src="./images/zamek.jpg" alt="Zamek">
         <figcaption>
-            <p class="painting-title">Zamek</p>
+            <p class="painting-title" data-i18n="zamek"></p>
             <p class="painting-medium">oil on canvas, 30x30</p>
             <p class="painting-year">2026</p>
         </figcaption>
@@ -277,7 +283,7 @@ Discorso Nascosto, Rzym, 2023<br>
     <figure class="small">
         <img src="./images/response.jpg" alt="Odpowiedź">
         <figcaption>
-            <p class="painting-title">Odpowiedź</p>
+            <p class="painting-title" data-i18n="response"></p>
             <p class="painting-medium">oil on canvas, 30x30</p>
             <p class="painting-year">2026</p>
         </figcaption>
@@ -286,7 +292,7 @@ Discorso Nascosto, Rzym, 2023<br>
     <figure class="small">
         <img src="./images/autoportret.jpg" alt="Autoportret">
         <figcaption>
-            <p class="painting-title">Autoportret</p>
+            <p class="painting-title" data-i18n="autoportret"></p>
             <p class="painting-medium">oil on canvas, 30x30</p>
             <p class="painting-year">2026</p>
         </figcaption>
@@ -314,7 +320,7 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
     <figure class="total">
         <img src="./images/prolog/otwarcie.jpg" alt="Otwarcie bramy">
         <figcaption>
-            <p class="painting-title">Otwarcie bramy</p>
+            <p class="painting-title" data-i18n="otwarcie"></p>
             <p class="painting-medium">oil on canvas, 110x310</p>
             <p class="painting-year">2025</p>
         </figcaption>
@@ -323,7 +329,7 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
     <figure class="vertical">
         <img src="./images/prolog/lock.jpg" alt="Złączenie">
         <figcaption>
-            <p class="painting-title">Złączenie</p>
+            <p class="painting-title" data-i18n="lock"></p>
             <p class="painting-medium">acrylic on canvas, 160x160</p>
             <p class="painting-year">2025</p>
         </figcaption>
@@ -332,7 +338,7 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
     <figure class="total">
         <img src="./images/prolog/prolog.jpg" alt="Prolog">
         <figcaption>
-            <p class="painting-title">Prolog</p>
+            <p class="painting-title" data-i18n="prolog"></p>
             <p class="painting-medium">acrylic on canvas, 400x370</p>
             <p class="painting-year">2025</p>
         </figcaption>
@@ -341,7 +347,7 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
     <figure class="small-vertical">
         <img src="./images/prolog/zadomem.jpg" alt="Za domem">
         <figcaption>
-            <p class="painting-title">Za domem</p>
+            <p class="painting-title" data-i18n="zadomem"></p>
             <p class="painting-medium">acrylic on canvas, 50x50</p>
             <p class="painting-year">2025</p>
         </figcaption>
@@ -350,7 +356,7 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
     <figure class="small-vertical">
         <img src="./images/prolog/zagajnik.jpg" alt="Zagajnik">
         <figcaption>
-            <p class="painting-title">Zagajnik</p>
+            <p class="painting-title" data-i18n="zagajnik"></p>
             <p class="painting-medium">acrylic on canvas, 30x40</p>
             <p class="painting-year">2025</p>
         </figcaption>
@@ -359,7 +365,7 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
     <figure class="vertical">
         <img src="./images/prolog/oczekiwanie.jpg" alt="Oczekiwanie w ogrójcu">
         <figcaption>
-            <p class="painting-title">Oczekiwanie w ogrójcu</p>
+            <p class="painting-title" data-i18n="oczekiwanie"></p>
             <p class="painting-medium">oil on canvas, 160x160</p>
             <p class="painting-year">2025</p>
         </figcaption>
@@ -368,7 +374,7 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
     <figure class="small-vertical">
         <img src="./images/prolog/bath.jpg" alt="Kąpiel">
         <figcaption>
-            <p class="painting-title">Kąpiel</p>
+            <p class="painting-title" data-i18n="bath"></p>
             <p class="painting-medium">oil on canvas, 30x40</p>
             <p class="painting-year">2025</p>
         </figcaption>
@@ -382,7 +388,7 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
     </div>
 
     <figcaption>
-        <p class="painting-title">Trzy stany</p>
+        <p class="painting-title" data-i18n="stany"></p>
         <p class="painting-medium">acrylic and oil on canvas</p>
         <p class="painting-year">2025</p>
     </figcaption>
@@ -396,7 +402,7 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
     <figure class="vertical">
         <img src="./images/dogs/pies.jpg" alt="Pies idzie do nieba">
         <figcaption>
-            <p class="painting-title">Anioły czekające pod bramą</p>
+            <p class="painting-title" data-i18n="pies"></p>
             <p class="painting-medium">acrylic on canvas, 160x160</p>
             <p class="painting-year">2024</p>
         </figcaption>
@@ -405,7 +411,7 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
     <figure class="vertical">
         <img src="./images/dogs/droga.jpg" alt="Droga do nieba">
         <figcaption>
-            <p class="painting-title">Droga do nieba</p>
+            <p class="painting-title" data-i18n="road"></p>
             <p class="painting-medium">acrylic on canvas, 180x160</p>
             <p class="painting-year">2024</p>
         </figcaption>
@@ -414,7 +420,7 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
     <figure class="total">
         <img src="./images/dogs/granica.jpg" alt="Granica">
         <figcaption>
-            <p class="painting-title">Granica</p>
+            <p class="painting-title" data-i18n="granica"></p>
             <p class="painting-medium">acrylic on canvas, 170x270</p>
             <p class="painting-year">2024</p>
         </figcaption>
@@ -423,7 +429,7 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
     <figure class="vertical">
         <img src="./images/dogs/aniol.jpg" alt="Anioł stróż">
         <figcaption>
-            <p class="painting-title">Anioł stróż</p>
+            <p class="painting-title" data-i18n="aniol"></p>
             <p class="painting-medium">acrylic on canvas, 160x160</p>
             <p class="painting-year">2024</p>
         </figcaption>
@@ -432,7 +438,7 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
     <figure class="horizontal">
         <img src="./images/dogs/chmura.jpg" alt="Chmura">
         <figcaption>
-            <p class="painting-title">Chmura</p>
+            <p class="painting-title" data-i18n="chmura"></p>
             <p class="painting-medium">acrylic on canvas, 170x160</p>
             <p class="painting-year">2024</p>
         </figcaption>
@@ -441,7 +447,7 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
     <figure class="horizontal">
         <img src="./images/dogs/wspomnienie.jpg" alt="Wspomnienie o świecie">
         <figcaption>
-            <p class="painting-title">Wspomnienie o świecie</p>
+            <p class="painting-title" data-i18n="wspomnienie"></p>
             <p class="painting-medium">acrylic on canvas, 170x160</p>
             <p class="painting-year">2024</p>
         </figcaption>
@@ -450,7 +456,7 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
     <figure class="vertical">
         <img src="./images/dogs/niebo.jpg" alt="Niebo">
         <figcaption>
-            <p class="painting-title">Niebo</p>
+            <p class="painting-title" data-i18n="niebo"></p>
             <p class="painting-medium">oil on canvas, 150x150</p>
             <p class="painting-year">2024</p>
         </figcaption>
@@ -494,8 +500,7 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
             <figure class="paradise-left">
                 <img src="./images/paradise/1.png" alt="Opis">
                 <figcaption>
-                    <p>przypomina ci o tym skąd idziesz<br>
-                    i dokąd</p>
+                    <p data-i18n-html="paradise-poem-01"></p>
                 </figcaption>
             </figure>
             <figure class="paradise-right">
@@ -507,12 +512,7 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
             <figure class="paradise-left">
                 <img src="./images/paradise/2.png" alt="Opis">
                     <figcaption>
-                        <p>zaczynam widzieć<br>
-                        że wszystko<br>
-                        na co patrzyłeś<br>
-                        zostanie przemienione<br>
-                        za sprawą<br>
-                        co najmniej przypadku</p>
+                        <p data-i18n-html="paradise-poem-02"></p>
                     </figcaption>
             </figure>
             <figure class="paradise-right">
@@ -524,10 +524,7 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
             <figure class="paradise-left">
                 <img src="./images/paradise/3.png" alt="Opis">
                     <figcaption>
-                        <p>musisz przejść<br>
-                        szukałeś drzwi tak długo<br>
-                        ten etap już za tobą<br>
-                        musisz przejść</p>
+                        <p data-i18n-html="paradise-poem-03"></p>
                     </figcaption>
             </figure>
             <figure class="paradise-right">
@@ -539,17 +536,7 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
             <figure class="paradise-left">
                 <img src="./images/paradise/4.png" alt="Opis">
                     <figcaption>
-                        <p>mówi do ciebie nowa tajemnica<br>
-                        poprzednie życie jest czyimś innym<br>
-                        nie jesteś nim<br>
-                        musisz przejść przez wszystkie bramy które napotkasz<br>
-                        czasem wpadniesz w ślepy zaułek<br>
-                        nie zniechęcaj się<br>
-                        patrz na niego<br>
-                        cierpliwie<br>
-                        a otworzy się przejście<br>
-                        i nie będziesz wiedział gdzie idziesz<br>
-                        a droga będzie znajoma</p>
+                        <p data-i18n-html="paradise-poem-04"></p>
                     </figcaption>
             </figure>
             <figure class="paradise-right">
@@ -561,16 +548,7 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
             <figure class="paradise-left">
                 <img src="./images/paradise/5.png" alt="Opis">
                     <figcaption>
-                        <p>Rzym to mieszanka cudzych wspomnień i mnie<br>
-                        Rzym uczy mnie płynąć<br>
-                        Rzym przeze mnie płynie<br>
-                        nauczył mnie<br>
-                        jak mu pozwalać<br>
-                        wtedy Rzym jest wszędzie<br>
-                        i ja<br>
-                        jestem nim<br>
-                        gdy jestem w Rzymie<br>
-                        to maluję jak Rzym</p>
+                        <p data-i18n-html="paradise-poem-05"></p>
                     </figcaption>
             </figure>
             <figure class="paradise-right">
@@ -582,8 +560,7 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
             <figure class="paradise-left">
                 <img src="./images/paradise/6.png" alt="Opis">
                     <figcaption>
-                        <p>spowija mi oczy mgła<br>
-                        mgła zasłania szum</p>
+                        <p data-i18n-html="paradise-poem-06"></p>
                     </figcaption>
             </figure>
             <figure class="paradise-right">
@@ -595,14 +572,7 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
             <figure class="paradise-left">
                 <img src="./images/paradise/7.png" alt="Opis">
                     <figcaption>
-                        <p>od lat powtarza się ten sen<br>
-                        w którym istnieje dodatkowy pokój<br>
-                        który przecież zawsze tam był<br>
-                        a jednak na co dzień go nie ma<br>
-                        to zawsze jest pokój<br>
-                        który przypomina ci dom<br>
-                        znasz go<br>
-                        i nie znasz</p>
+                        <p data-i18n-html="paradise-poem-07"></p>
                     </figcaption>
             </figure>
             <figure class="paradise-right">
@@ -614,17 +584,7 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
             <figure class="paradise-left">
                 <img src="./images/paradise/8.png" alt="Opis">
                     <figcaption>
-                        <p>musisz czekać<br>
-                            wiedzieć że<br>
-                            i<br>
-                            na co<br>
-                            czekasz<br>
-                            gdy przyjdzie<br>
-                            cokolwiek by to nie było<br>
-                            będziesz wiedział że przyszło<br>
-                            to<br>
-                            na co wiesz<br>
-                            ze czekałeś</p>
+                        <p data-i18n-html="paradise-poem-08"></p>
                     </figcaption>
             </figure>
             <figure class="paradise-right">
@@ -636,13 +596,7 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
             <figure class="paradise-left">
                 <img src="./images/paradise/10.png" alt="Opis">
                     <figcaption>
-                        <p>otworzyło się<br>
-                        na chwilę<br>
-                        długą jak wieczność<br>
-                        przejście<br>
-                        tunel przejść<br>
-                        przejścia w przejścia<br>
-                        od tamtej pory wszystko jest inne</p>
+                        <p data-i18n-html="paradise-poem-10"></p>
                     </figcaption>
             </figure>
             <figure class="paradise-right">
@@ -757,6 +711,8 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
 
 
 <script src="./modal.js"></script>
+<script src="./language.js"></script>
+
 
 
 

@@ -7,6 +7,11 @@ function show(id) {
     if (target) target.classList.remove("hidden");
 }
 
+document.querySelectorAll(".painting-gallery img").forEach(img => {
+    img.loading = "lazy";
+    img.decoding = "async";
+});
+
 /* MAIN NAV */
 document.querySelectorAll("[data-open]").forEach(link => {
     link.addEventListener("click", e => {
