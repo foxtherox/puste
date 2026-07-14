@@ -1,6 +1,10 @@
 const translations = {
 
     en: {
+        painting: "painting",
+        exhibitions: "exhibitions",
+        about: "about",
+        contact: "contact",
         stranger: "Stranger Than Paradise",
         psy: "All Dogs Go to Heaven",
         panhilary: "Mr. Hilary Lost His Glasses",
@@ -27,6 +31,14 @@ const translations = {
         zamek: "Castle",
         response: "Answer",
         autoportret: "Self-portrait",
+        net: "Net",
+        jackwhite: "Jack White",
+        domwemgle: "House in the Mist",
+        bookofcups: "Book of Three Cups",
+        zlodziej: "Thief",
+        kompas: "Compass",
+        bishop: "Bishop",
+
 
         otwarcie: "Opening of the Gate",
         lock: "Connection",
@@ -36,13 +48,17 @@ const translations = {
         bath: "Bath",
         stany: "Three States",
 
-        pies: "Angels Waiting at the Gate",
+        pies: "Dog Goes to Heaven",
         road: "Road to Heaven",
         granica: "The Border",
         aniol: "Guardian Angel",
         chmura: "Cloud",
         wspomnienie: "Memory of the World",
         niebo: "Heaven",
+
+        pasek: "9 canvases, 160x180 each",
+        acrylic: "acrylic on canvas",
+        oil: "oil on canvas",
 
         "paradise-poem-01":
             `reminds you where you’re coming from<br>
@@ -90,17 +106,17 @@ const translations = {
         "paradise-poem-06":
             `mist covers my eyes<br>
             the mist obscures the noise`,
-            
-        "paradise-poem-07":
-            `od lat powtarza się ten sen<br>
-                        w którym istnieje dodatkowy pokój<br>
-                        który przecież zawsze tam był<br>
-                        a jednak na co dzień go nie ma<br>
-                        to zawsze jest pokój<br>
-                        który przypomina ci dom<br>
-                        znasz go<br>
-                        i nie znasz`,
 
+        "paradise-poem-07":
+                `for years this dream has been recuring<br>
+                where an additional room exists<br>
+                after all, it was there all the time<br>
+                and yet, in everyday life, it is not<br>
+                it is always a room<br>
+                that reminds you of home<br>
+                you know it<br>
+                and, in the same time, you do not`,
+                
         "paradise-poem-08":
             `you must wait<br>
             knowing that<br>
@@ -123,9 +139,47 @@ const translations = {
             passages within passages<br>
             since then everything is different`,
 
+        indywidualne: "Personal exhibitions",
+        grupowe: "Group exhibitions",
+        edukacja: "Education",
+
+        "pawelbio":
+            `Paweł Domański (born 1994) — painter, graphic and tattoo artist. A graduate of the Eugeniusz Geppert Academy of Art and Design in Wrocław, where he completed his Master's degree in Graphic Arts with a diploma in Painting. His work explores the intersections of image, perception, dreams, and the unconscious, treating the act of painting as both a method of inquiry and a means of revealing inner reality. He is developing the original concepts of the "parallel gesture" and "layered observation," exploring painting as a space in which perception continuously transforms both the image and the one who observes it.`,
+
+        "spiswystawind":
+            `<span class="highlight">Prologue</span> — Wroclaw 07.2025<br>
+            <span class="highlight">Stranger Than Paradise</span> — Wroclaw 07.2024 & Góry Literatury, Sarny Castle, 07.2024<br>
+            <span class="highlight">All Dogs Go to Heaven</span> — Wrocław 05.2023 & OKO Centrum of Arts, Olawa, 11.2023<br>
+            <span class="highlight">Mr. Hilary Lost His Glasses</span> — Rome 07.2022<br>
+            <span class="highlight">El hopaness romtic</span> — Wroclaw 08.2021<br> 
+            <span class="highlight">No name</span> — Wroclaw 2020<br>`,
+            
+        "spisedu":
+            `2018-2024 Graphics, The Eugeniusz Geppert Academy of Art and Design, Wroclaw<br>
+            2013-2018 Architecture, Wroclaw University of Science and Technology`,
+            
+        "spiswystawgru":
+            `TEGO NIE PRZETRWASZ/ Styrta Kolektyw, Wroclaw, 2026 <span class="highlight">— upcoming</span><br>
+            AB OVO II, Wroclaw, 2025<br>
+            Spokój Festival, Dabrowa, 2025<br> 
+            Wrocław OFF Gallery Weekend III, Wroclaw, 2025<br>
+            Góry Literatury, Sarny Castle, 2024<br>
+            AB OVO, Wroclaw, 2024<br>
+            AvantArt Festival, Wroclaw, 2024<br>
+            Wrocław OFF Gallery Weekend II, Wroclaw, 2024<br> 
+            Avant Gabber, Transformator, Wroclaw, 2024<br>
+            Galeria Szybka, Serwis Pracownia, Wroclaw, 2024<br>
+            Wrocław OFF Gallery Weekend I, Wroclaw, 2023<br>
+            Discorso Nascosto, Rome, 2023<br>`,
+
     },
 
     pl: {
+        painting: "malarstwo",
+        exhibitions: "wystawy",
+        about: "o mnie",
+        contact: "kontakt",
+
         stranger: "Inaczej niż w raju",
         psy: "Wszystkie psy idą do nieba",
         panhilary: "Pan Hilary zgubił okulary",
@@ -152,6 +206,13 @@ const translations = {
         zamek: "Zamek",
         response: "Odpowiedź",
         autoportret: "Autoportret",
+        net: "Sieć",
+        jackwhite: "Jack White",
+        domwemgle: "Dom we mgle",
+        bookofcups: "Księga trzech kubków",
+        zlodziej: "Złodziej",
+        kompas: "Kompas",
+        bishop: "Bishop",
 
         otwarcie: "Otwarcie bramy",
         lock: "Złączenie",
@@ -161,13 +222,17 @@ const translations = {
         bath: "Kąpiel",
         stany: "Trzy stany",
 
-        pies: "Anioły czekające pod bramą",
+        pies: "Pies idzie do nieba",
         road: "Droga do nieba",
         granica: "Granica",
         aniol: "Anioł stróż",
         chmura: "Chmura",
         wspomnienie: "Wspomnienie o świecie",
         niebo: "Niebo",
+
+        pasek: "9 płócien, 160x180 każde",
+        acrylic: "akryl na płótnie",
+        oil: "olej na płótnie",
 
         "paradise-poem-01":
             `przypomina ci o tym skąd idziesz<br>
@@ -248,6 +313,44 @@ const translations = {
                         przejścia w przejścia<br>
                         od tamtej pory wszystko jest inne`,
 
+        indywidualne: "Wystawy indywidualne",
+        grupowe: "Wystawy grupowe",
+        edukacja: "Edukacja",
+
+        "pawelbio":
+            `Paweł Domański (ur. 1994) — malarz, rysownik i tatuażysta. 
+            Absolwent ASP we Wrocławiu, gdzie w 2024 roku obronił dyplom z malarstwa na kierunku Grafika. 
+            W swojej praktyce bada relacje pomiędzy obrazem, percepcją, snem 
+            oraz procesem twórczym traktowanym jako narzędzie obserwacji rzeczywistości wewnętrznej. 
+            Rozwija autorskie pojęcia „gestu równoległego” i „obserwacji warstwowej”, 
+            koncentrując się na procesie transformacji zachodzącym podczas aktu twórczego.`,
+
+        "spiswystawind":
+            `<span class="highlight">Prolog</span> — Wrocław 07.2025<br>
+            <span class="highlight">Inaczej niż w raju</span> — Wrocław 07.2024 oraz Góry Literatury, Zamek Sarny, 07.2024<br>
+            <span class="highlight">Wszystkie psy idą do nieba</span> — Wrocław 05.2023 oraz Centrum Sztuki OKO w Oławie, 11.2023<br>
+            <span class="highlight">Pan Hilary zgubił okulary</span> — Rzym 07.2022<br>
+            <span class="highlight">El hopaness romtic</span> — Wrocław 08.2021<br> 
+            <span class="highlight">Bez nazwy</span> — Wrocław 2020<br>`,
+            
+        "spisedu":
+            `2018-2024 Grafika, Akademia Sztuk Pięknych, Wrocław<br>
+            2013-2018 Architektura i urbanistyka, Politechnika Wrocławska`,
+            
+        "spiswystawgru":
+            `TEGO NIE PRZETRWASZ/ Styrta Kolektyw, Wrocław, 2026 <span class="highlight">— nadchodząca</span><br>
+            AB OVO II, Wrocław, 2025<br>
+            Spokój Festiwal, Dąbrowa, 2025<br> 
+            Wrocław OFF Gallery Weekend III, Wrocław, 2025<br>
+            Góry Literatury, Zamek Sarny, 2024<br>
+            AB OVO, Wrocław, 2024<br>
+            AvantArt Festiwal, Wrocław, 2024<br>
+            Wrocław OFF Gallery Weekend II, Wrocław, 2024<br> 
+            Avant Gabber, Transformator, Wrocłąw, 2024<br>
+            Galeria Szybka, Serwis Pracownia, Wrocław, 2024<br>
+            Wrocław OFF Gallery Weekend I, Wrocław, 2023<br>
+            Discorso Nascosto, Rzym, 2023<br>`,
+                        
     },
 
 };
@@ -255,9 +358,26 @@ const translations = {
 
 
 
-let currentLanguage =
-    localStorage.getItem("language") || "en";
+let currentLanguage = localStorage.getItem("language") || "en";
 
+document.addEventListener("DOMContentLoaded", () => {
+
+    updateLanguage();
+
+    document.querySelectorAll("[data-lang]").forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            setLanguage(button.dataset.lang);
+
+        });
+
+    });
+
+});
+
+document.getElementById("about-text").innerHTML =
+  translations[currentLanguage].about;
 
 function updateLanguage() {
 
@@ -265,18 +385,27 @@ function updateLanguage() {
 
         const key = element.dataset.i18n;
 
-        element.textContent =
-            translations[currentLanguage][key];
+        if (translations[currentLanguage][key] !== undefined) {
+            element.textContent = translations[currentLanguage][key];
+        }
 
     });
 
     document.querySelectorAll("[data-i18n-html]").forEach(element => {
+
         const key = element.dataset.i18nHtml;
-        element.innerHTML = translations[currentLanguage][key];
+
+        if (translations[currentLanguage][key] !== undefined) {
+            element.innerHTML = translations[currentLanguage][key];
+        }
+
+    });
+
+    document.querySelectorAll(".lang-img").forEach(img => {
+    img.src = img.dataset[currentLanguage];
     });
 
 }
-
 
 function setLanguage(lang) {
 
@@ -287,15 +416,3 @@ function setLanguage(lang) {
     updateLanguage();
 
 }
-
-
-document.querySelectorAll("[data-lang]").forEach(button => {
-
-    button.addEventListener("click", () => {
-
-        setLanguage(button.dataset.lang);
-
-    });
-
-});
-
