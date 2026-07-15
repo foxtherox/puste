@@ -3,11 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paweł Domański</title>
+    <meta name="description"
+        content="Portfolio of contemporary painter and tattoo artist Pawel Domanski. Paintings, exhibitions, artistic practice and contact.">
+
+    <title>Paweł Domański – painter, graphic & tattoo artist</title>
+
+    <meta property="og:title" content="Paweł Domański">
+    <meta property="og:description" content="Painter, graphic & tattoo artist">
+    <meta property="og:image" content="https://paweldomanski.art/images/share.jpg">
+    <meta property="og:url" content="https://paweldomanski.art">
 
     <!-- Styles -->
     <link rel="stylesheet" href="./css/main.css">
+
+    <script type="application/ld+json">
+            {                
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://paweldomanski.art/#person",
+        "name": "Paweł Domański",
+        "jobTitle": "Painter, graphic & tattoo artist",
+        "image": "https://paweldomanski.art/images/autoportret.jpg"
+        "url": "https://paweldomanski.art",
+        "sameAs": [
+            "https://instagram.com/pustedziary/"   ]
+        "@type": "WebSite",
+        "@id": "https://paweldomanski.art/#website",
+        "url": "https://paweldomanski.art",
+        "name": "Paweł Domański"
+            }
+    </script>
+
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y7KT33SQQP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y7KT33SQQP');
+</script>
+
 
 <body>
     <section id="home" class="layout">
@@ -361,7 +399,7 @@
     <figure class="small">
         <img src="./images/bookof3cups.JPG" alt="Book of Three Cups">
         <figcaption>
-            <p class="painting-title" data-i18n="bookof3cups"></p>
+            <p class="painting-title" data-i18n="bookofcups"></p>
             <p class="painting-medium" data-i18n="oil"></p>
             <p class="painting-size">40x30</p>
             <p class="painting-year">2026</p>
@@ -470,6 +508,7 @@ Samotne drzewo, olej na płótnie, 30x30, 2026
     <figcaption>
         <p class="painting-title" data-i18n="stany"></p>
         <p class="painting-medium" data-i18n="acrylic"></p>
+        <p class="painting-size" data-i18n="tryptyk"></p>
         <p class="painting-year">2025</p>
     </figcaption>
 </figure>
