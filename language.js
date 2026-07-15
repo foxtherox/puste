@@ -57,6 +57,7 @@ const translations = {
         niebo: "Heaven",
 
         pasek: "9 canvases, 160x180 each",
+        tryptyk: "triptych, 30x40",
         acrylic: "acrylic on canvas",
         oil: "oil on canvas",
 
@@ -231,6 +232,7 @@ const translations = {
         niebo: "Niebo",
 
         pasek: "9 płócien, 160x180 każde",
+        tryptyk: "tryptyk, 30x40",
         acrylic: "akryl na płótnie",
         oil: "olej na płótnie",
 

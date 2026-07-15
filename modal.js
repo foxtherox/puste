@@ -32,6 +32,7 @@ const panels = document.querySelectorAll(".panel");
 const galleries = document.querySelectorAll(".painting-gallery");
 const logo = document.querySelector(".logo");
 const contact = document.querySelector(".contact");
+const language = document.querySelector(".language-switch");
 
 
 function show(id) {
@@ -58,6 +59,15 @@ function show(id) {
         logo.classList.remove("hidden-ui");
         contact.classList.remove("hidden-ui");
     }
+
+    if (isGallery) {
+        logo.classList.add("hidden-ui");
+        language.classList.add("hidden-ui");
+    } else {
+        logo.classList.remove("hidden-ui");
+        language.classList.remove("hidden-ui");
+    }
+
 
     if (window.innerWidth <= 768) {
     if (id === "about") {
