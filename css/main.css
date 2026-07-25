@@ -124,7 +124,7 @@ a {
 /* Header */
 
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -228,6 +228,7 @@ a {
 
         padding: 2rem;
         padding-right: 2 rem;
+        padding-bottom: 5rem;
 
         transform: none;
 
@@ -563,6 +564,20 @@ figcaption {
     padding-top: 120px;
 }
 
+.paradise-layout figure {
+    margin: 0;
+}
+
+.paradise-left img {
+    width: 28vw;
+    margin-top: 10vw;
+    margin-right: -5vw;
+}
+
+.paradise-right img {
+    width: 40vw;
+}
+
 @media (max-width: 768px) {
 
     .paradise-layout {
@@ -580,20 +595,6 @@ figcaption {
         width: 90vw;
     }
 
-}
-
-.paradise-layout figure {
-    margin: 0;
-}
-
-.paradise-left img {
-    width: 28vw;
-    margin-top: 10vw;
-    margin-right: -5vw;
-}
-
-.paradise-right img {
-    width: 40vw;
 }
 
 .paradise-left figcaption {
