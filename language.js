@@ -360,7 +360,7 @@ const translations = {
 
 
 
-let currentLanguage = localStorage.getItem("language") || "en";
+let currentLanguage = localStorage.getItem("language") || "pl";
 
 document.addEventListener("DOMContentLoaded", () => {
 
