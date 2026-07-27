@@ -179,7 +179,7 @@ a {
 .hero-image {
     position: absolute;
     top: 65%;
-    left: 87%;
+    left: 83%;
     transform: translate(-50%, -50%);
     width: 60vw;
     z-index: 0;
