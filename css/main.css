@@ -555,6 +555,12 @@ figcaption {
     gap: 10rem;
 }
 
+@media (max-width: 768px) {
+    .paradise-stack {
+    gap: 0;
+    }
+}
+
 .paradise-layout {
     width: 100%;
     display: flex;
